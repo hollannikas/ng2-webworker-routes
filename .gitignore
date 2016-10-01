@@ -1,0 +1,17 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+
+# transpiled files
+/app/**/*.js
+/app/**/*.map
+/bootstrap.js
+/bootstrap.js.map
+
+# misc
+npm-debug.log
+/typings
