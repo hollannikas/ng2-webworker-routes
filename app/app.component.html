@@ -1,9 +1,14 @@
-<nav>
-	<ul>
-		<li class="start" routerLink="/">Start</li>
-		<li class="detail" routerLink="/detail">Detail</li>
-	</ul>
-</nav>
-<main>
-	<router-outlet></router-outlet>
-</main>
+<table>
+  <thead>
+    <tr style="position:fixed; background:white">
+      <th style="width:150px">Number</th>
+      <th style="width:150px">Largest Prime Factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td style="width:150px">{{item.num}}</td>
+      <td style="width:150px"> {{item.factor}}</td>
+    </tr>
+  </tbody>
+</table>
