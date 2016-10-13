@@ -1,5 +1,14 @@
-import {Component,NgModule} from '@angular/core';
-import {WorkerAppModule} from '@angular/platform-webworker';
+import { Component,NgModule } from '@angular/core';
+import { WorkerAppModule } from '@angular/platform-webworker';
+
+@NgModule({
+  imports: [WorkerAppModule],
+  providers: [],
+  bootstrap: [App],
+  declarations: [App]
+})
+export class AppModule {
+}
 
 var NUM_ITEMS_PER_ROUND: number = 30;
 const MAX_ITEMS = 100000;
@@ -68,14 +77,5 @@ class DataRow {
   factor: number;
 }
 
-
-@NgModule({
-  imports: [WorkerAppModule],
-  providers: [],
-  bootstrap: [App],
-  declarations: [App]
-})
-export class AppModule {
-}
 
 
